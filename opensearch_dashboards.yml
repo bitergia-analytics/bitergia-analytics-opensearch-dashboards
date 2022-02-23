@@ -1,0 +1,27 @@
+server.host: "0"
+opensearch.hosts: ["https://localhost:9200"]
+opensearch.ssl.verificationMode: none
+opensearch.username: "kibanaserver"
+opensearch.password: "kibanaserver"
+opensearch.requestHeadersWhitelist: [ authorization,securitytenant ]
+
+opensearch_security.multitenancy.enabled: false
+opensearch_security.readonly_mode.roles: ["kibana_read_only"]
+
+# Use this setting if you are running opensearch-dashboards without https
+opensearch_security.cookie.secure: false
+
+# Bitergia Branding
+opensearchDashboards.branding:
+  applicationTitle: "Bitergia Analytics"
+  logo:
+    defaultUrl: "https://raw.githubusercontent.com/Bitergia/bitergia-analytics-opensearch-dashboards/master/assets/bitergia_logo.svg"
+  mark:
+    defaultUrl: "https://raw.githubusercontent.com/Bitergia/bitergia-analytics-opensearch-dashboards/master/assets/bitergia_logo.svg"
+  loadingLogo:
+    defaultUrl: "https://raw.githubusercontent.com/Bitergia/bitergia-analytics-opensearch-dashboards/master/assets/bitergia_logo.svg"
+  faviconUrl: "https://raw.githubusercontent.com/Bitergia/bitergia-analytics-opensearch-dashboards/master/assets/bitergia_logo.svg"
+
+opensearch_security.basicauth.login.brandimage: "https://raw.githubusercontent.com/Bitergia/bitergia-analytics-opensearch-dashboards/master/assets/bitergia_login_logo.png"
+opensearch_security.basicauth.login.title: "Please login to Bitergia Analytics Dashboard."
+opensearch_security.basicauth.login.subtitle: "If you have forgotten your username or password, please contact the Bitergia staff."
