@@ -37,7 +37,6 @@ RUN opensearch-dashboards-plugin install "https://github.com/Bitergia/bitergia-a
 RUN opensearch-dashboards-plugin remove alertingDashboards && \
     opensearch-dashboards-plugin remove anomalyDetectionDashboards && \
     opensearch-dashboards-plugin remove observabilityDashboards && \
-    opensearch-dashboards-plugin remove queryWorkbenchDashboards && \
     opensearch-dashboards-plugin remove reportsDashboards
 
 #
