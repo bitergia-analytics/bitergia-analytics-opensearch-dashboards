@@ -22,7 +22,7 @@ ENV PATH=/usr/share/opensearch-dashboards/bin:$PATH
 
 # Install visualization plugins
 RUN opensearch-dashboards-plugin install "https://github.com/dlumbrer/kbn_radar/releases/download/osd-1.3.2/kbn_radar-7.10.0_1.3.2.zip" && \
-    opensearch-dashboards-plugin install "https://github.com/dlumbrer/kbn_network/releases/download/osd-1.3.2-1/kbn_network-7.10.0_1.3.2.zip" && \
+    opensearch-dashboards-plugin install "https://github.com/dlumbrer/kbn_network/releases/download/osd-1.3.2-2/kbn_network-7.10.0_1.3.2.zip" && \
     opensearch-dashboards-plugin install "https://github.com/dlumbrer/kbn_dotplot/releases/download/osd-1.3.2/kbn_dotplot-7.10.0_1.3.2.zip" && \
     opensearch-dashboards-plugin install "https:/github.com/dlumbrer/kbn_polar/releases/download/osd-1.3.2/kbn_polar-1.0.0_1.3.2.zip"
 
