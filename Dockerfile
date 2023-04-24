@@ -1,4 +1,7 @@
-FROM opensearchproject/opensearch-dashboards:1.3.2
+# Copyright (C) Bitergia
+# GPLv3 License
+
+FROM opensearchproject/opensearch-dashboards:2.6.0
 
 LABEL maintainer="Santiago Dueñas <sduenas@bitergia.com>"
 LABEL org.opencontainers.image.title="Bitergia Analytics OpenSearch Dashboards"
@@ -21,23 +24,19 @@ ENV PATH=/usr/share/opensearch-dashboards/bin:$PATH
 #
 
 # Install visualization plugins
-RUN opensearch-dashboards-plugin install "https://github.com/dlumbrer/kbn_radar/releases/download/osd-1.3.2/kbn_radar-7.10.0_1.3.2.zip" && \
-    opensearch-dashboards-plugin install "https://github.com/dlumbrer/kbn_network/releases/download/osd-1.3.2-2/kbn_network-7.10.0_1.3.2.zip" && \
-    opensearch-dashboards-plugin install "https://github.com/dlumbrer/kbn_dotplot/releases/download/osd-1.3.2/kbn_dotplot-7.10.0_1.3.2.zip" && \
-    opensearch-dashboards-plugin install "https:/github.com/dlumbrer/kbn_polar/releases/download/osd-1.3.2/kbn_polar-1.0.0_1.3.2.zip"
+RUN opensearch-dashboards-plugin install "https://github.com/dlumbrer/kbn_radar/releases/download/osd-2.6.0/kbn_radar-7.10.0_2.6.0.zip" && \
+    opensearch-dashboards-plugin install "https://github.com/dlumbrer/kbn_network/releases/download/osd-2.6.0/kbn_network-7.10.0_2.6.0.zip" && \
+    opensearch-dashboards-plugin install "https://github.com/dlumbrer/kbn_dotplot/releases/download/osd-2.6.0/kbn_dotplot-7.10.0_2.6.0.zip" && \
+    opensearch-dashboards-plugin install "https:/github.com/dlumbrer/kbn_polar/releases/download/osd-2.6.0/kbn_polar-1.0.0_2.6.0.zip"
 
-# FIXME: This is a temporary fork because OSD is 
-# not supported upstream.
-RUN opensearch-dashboards-plugin install "https://github.com/Bitergia/kibana-enhanced-table/releases/download/osd-1.3.2/enhanced-table-1.11.0_1.3.2.zip"
+# Install enhanced table plugin
+RUN opensearch-dashboards-plugin install "https://github.com/fbaligand/kibana-enhanced-table/releases/download/v1.13.3/enhanced-table-1.13.3_osd-2.6.0.zip"
 
 # Install Bitergia Analytics plugins
-RUN opensearch-dashboards-plugin install "https://github.com/Bitergia/bitergia-analytics-plugin/releases/download/0.1.0/bitergia_analytics-0.1.0_1.3.2.zip"
+RUN opensearch-dashboards-plugin install "https://github.com/Bitergia/bitergia-analytics-plugin/releases/download/0.2.0/bitergia_analytics-0.2.0_2.6.0.zip"
 
 # Remove plugins not supported on this release
-RUN opensearch-dashboards-plugin remove alertingDashboards && \
-    opensearch-dashboards-plugin remove anomalyDetectionDashboards && \
-    opensearch-dashboards-plugin remove observabilityDashboards && \
-    opensearch-dashboards-plugin remove reportsDashboards
+RUN opensearch-dashboards-plugin remove reportsDashboards
 
 #
 # Default configuration
