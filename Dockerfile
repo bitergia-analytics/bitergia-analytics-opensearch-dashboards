@@ -33,7 +33,7 @@ RUN opensearch-dashboards-plugin install "https://github.com/dlumbrer/kbn_radar/
 RUN opensearch-dashboards-plugin install "https://github.com/fbaligand/kibana-enhanced-table/releases/download/v1.13.3/enhanced-table-1.13.3_osd-2.7.0.zip"
 
 # Install Bitergia Analytics plugins
-RUN opensearch-dashboards-plugin install "https://github.com/Bitergia/bitergia-analytics-plugin/releases/download/0.5.0/bitergia_analytics-0.5.0_2.7.0.zip"
+RUN opensearch-dashboards-plugin install "https://github.com/bitergia-analytics/bitergia-analytics-plugin/releases/download/0.12.0-rc.2/bitergia_analytics-0.12.0_2.7.0.zip"
 
 # Remove plugins not supported on this release
 RUN opensearch-dashboards-plugin remove reportsDashboards
