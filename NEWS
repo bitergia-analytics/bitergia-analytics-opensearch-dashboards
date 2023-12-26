@@ -1,5 +1,13 @@
 # Releases
 
+## bitergia-analytics-opensearch-dashboards 0.14.1 - (2023-12-26)
+
+**Dependencies updateds:**
+
+ * Upgrade to OpenSearch 2.10\
+   With this release, OpenSearch version has been upgraded to 2.10.
+
+
   ## bitergia-analytics-opensearch-dashboards 0.14.0 - (2023-11-17)
   
   * No changes on this component. The version is bumped to align it
@@ -14,3 +22,4 @@
   
   * No changes on this component. The version is bumped to align it
     with the rest of the components.
+
