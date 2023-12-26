@@ -24,16 +24,16 @@ ENV PATH=/usr/share/opensearch-dashboards/bin:$PATH
 #
 
 # Install visualization plugins
-RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/radar-vis-plugin/releases/download/0.14.1-rc.1/radar-vis-plugin-0.14.1-rc.1_2.10.0.zip
-RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/network-vis-plugin/releases/download/0.14.1-rc.1/network-vis-plugin-0.14.1-rc.1_2.10.0.zip
-RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/dotplot-vis-plugin/releases/download/0.14.1-rc.1/dotplot-vis-plugin-0.14.1-rc.1_2.10.0.zip
-RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/polar-vis-plugin/releases/download/0.14.1-rc.1/polar-vis-plugin-0.14.1-rc.1_2.10.0.zip
+RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/radar-vis-plugin/releases/download/0.14.1-rc.2/radar-vis-plugin-0.14.1_2.10.0.zip
+RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/network-vis-plugin/releases/download/0.14.1-rc.2/network-vis-plugin-0.14.1_2.10.0.zip
+RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/dotplot-vis-plugin/releases/download/0.14.1-rc.2/dotplot-vis-plugin-0.14.1_2.10.0.zip
+RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/polar-vis-plugin/releases/download/0.14.1-rc.2/polar-vis-plugin-0.14.1_2.10.0.zip
 
 # Install enhanced table plugin
 RUN opensearch-dashboards-plugin install "https://github.com/fbaligand/kibana-enhanced-table/releases/download/v1.13.3/enhanced-table-1.13.3_osd-2.10.0.zip"
 
 # Install Bitergia Analytics plugins
-RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/bitergia-analytics-plugin/releases/download/0.14.1-rc.1/bitergia-analytics-plugin-0.14.1-rc.1_2.10.0.zip
+RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/bitergia-analytics-plugin/releases/download/0.14.1-rc.2/bitergia-analytics-plugin-0.14.1_2.10.0.zip
 
 # Remove plugins not supported on this release
 RUN opensearch-dashboards-plugin remove reportsDashboards
