@@ -1,5 +1,10 @@
 # Releases
 
+  ## bitergia-analytics-opensearch-dashboards 0.14.2 - (2023-12-26)
+  
+  * No changes on this component. The version is bumped to align it
+    with the rest of the components.
+
 ## bitergia-analytics-opensearch-dashboards 0.14.1 - (2023-12-26)
 
 **Dependencies updateds:**
