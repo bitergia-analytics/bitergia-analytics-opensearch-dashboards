@@ -1,9 +1,0 @@
----
-title: Upgrade to OpenSearch Dashboards 2.11.1
-category: added
-author: Santiago Dueñas <sduenas@bitergia.com>
-issue: null
-notes: >
-  OpenSearch Dashboard has been updated to 2.11.1
-  version to fix the problems found navigating
-  between dashboards.

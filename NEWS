@@ -1,5 +1,14 @@
 # Releases
 
+## bitergia-analytics-opensearch-dashboards 0.15.0 - (2024-01-02)
+
+**New features:**
+
+ * Upgrade to OpenSearch Dashboards 2.11.1\
+   OpenSearch Dashboard has been updated to 2.11.1 version to fix the
+   problems found navigating between dashboards.
+
+
   ## bitergia-analytics-opensearch-dashboards 0.14.2 - (2023-12-26)
   
   * No changes on this component. The version is bumped to align it
