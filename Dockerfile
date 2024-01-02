@@ -24,16 +24,16 @@ ENV PATH=/usr/share/opensearch-dashboards/bin:$PATH
 #
 
 # Install visualization plugins
-RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/radar-vis-plugin/releases/download/0.14.2/radar-vis-plugin-0.14.2_2.10.0.zip
-RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/network-vis-plugin/releases/download/0.14.2/network-vis-plugin-0.14.2_2.10.0.zip
-RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/dotplot-vis-plugin/releases/download/0.14.2/dotplot-vis-plugin-0.14.2_2.10.0.zip
-RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/polar-vis-plugin/releases/download/0.14.2/polar-vis-plugin-0.14.2_2.10.0.zip
+RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/radar-vis-plugin/releases/download/0.15.0-rc.1/radar-vis-plugin-0.15.0_2.11.1.zip
+RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/network-vis-plugin/releases/download/0.15.0-rc.1/network-vis-plugin-0.15.0_2.11.1.zip
+RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/dotplot-vis-plugin/releases/download/0.15.0-rc.1/dotplot-vis-plugin-0.15.0_2.11.1.zip
+RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/polar-vis-plugin/releases/download/0.15.0-rc.1/polar-vis-plugin-0.15.0_2.11.1.zip
 
 # Install enhanced table plugin
 RUN opensearch-dashboards-plugin install "https://github.com/fbaligand/kibana-enhanced-table/files/13727732/enhanced-table-1.14.0-alpha1_osd-2.11.1.zip"
 
 # Install Bitergia Analytics plugins
-RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/bitergia-analytics-plugin/releases/download/0.14.2/bitergia-analytics-plugin-0.14.2_2.10.0.zip
+RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/bitergia-analytics-plugin/releases/download/0.15.0-rc.1/bitergia-analytics-plugin-0.15.0_2.11.1.zip
 
 # Remove plugins not supported on this release
 RUN opensearch-dashboards-plugin remove reportsDashboards
