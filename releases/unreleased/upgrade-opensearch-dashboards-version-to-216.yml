@@ -1,0 +1,8 @@
+---
+title: Upgrade to OpenSearch Dashboards 2.16
+category: dependency
+author: Eva Millán <evamillan@bitergia.com>
+issue: null
+notes: >
+  OpenSearch Dashboards 2.16 fixes an issue with the colors of the 
+  visualizations when there are more than 10 items.

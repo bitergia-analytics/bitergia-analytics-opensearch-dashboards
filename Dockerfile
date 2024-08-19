@@ -1,7 +1,7 @@
 # Copyright (C) Bitergia
 # GPLv3 License
 
-FROM opensearchproject/opensearch-dashboards:2.11.1
+FROM opensearchproject/opensearch-dashboards:2.16.0
 
 LABEL maintainer="Santiago Dueñas <sduenas@bitergia.com>"
 LABEL org.opencontainers.image.title="Bitergia Analytics OpenSearch Dashboards"
@@ -30,7 +30,7 @@ RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/d
 RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/polar-vis-plugin/releases/download/0.21.2/polar-vis-plugin-0.21.2_2.11.1.zip
 
 # Install enhanced table plugin
-RUN opensearch-dashboards-plugin install "https://github.com/fbaligand/kibana-enhanced-table/files/13727732/enhanced-table-1.14.0-alpha1_osd-2.11.1.zip"
+RUN opensearch-dashboards-plugin install "https://github.com/fbaligand/kibana-enhanced-table/releases/download/v1.14.0/enhanced-table-1.14.0_osd-2.16.0.zip"
 
 # Install Bitergia Analytics plugins
 RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/bitergia-analytics-plugin/releases/download/0.21.2/bitergia-analytics-plugin-0.21.2_2.11.1.zip
