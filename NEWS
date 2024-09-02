@@ -1,5 +1,14 @@
 # Releases
 
+## bitergia-analytics-opensearch-dashboards 0.22.0 - (2024-09-02)
+
+**Dependencies updateds:**
+
+ * Upgrade to OpenSearch Dashboards 2.16\
+   OpenSearch Dashboards 2.16 fixes an issue with the colors of the
+   visualizations when there are more than 10 items.
+
+
   ## bitergia-analytics-opensearch-dashboards 0.21.2 - (2024-08-13)
   
   * No changes on this component. The version is bumped to align it
