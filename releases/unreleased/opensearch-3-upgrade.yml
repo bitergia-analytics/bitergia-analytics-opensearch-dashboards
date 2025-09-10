@@ -1,0 +1,13 @@
+---
+title: OpenSearch Dashboards 3 upgrade
+category: added
+author: Jose Javier Merchante <jjmerchante@bitergia.com>
+issue: null
+notes: >
+  Update base image for Bitergia Analytics OpenSearch Dashboards
+  to version 3.
+  OpenSearch Dashboards 3 brings enhanced usability and visualization
+  features. The Discover tool has been redesigned for easier data
+  exploration, with a unified language selector and improved
+  search interface. Dashboards now offer more flexible visualization
+  options, faster rendering, and smoother interactions.

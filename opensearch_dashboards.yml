@@ -3,7 +3,7 @@ opensearch.hosts: ["https://localhost:9200"]
 opensearch.ssl.verificationMode: none
 opensearch.username: "kibanaserver"
 opensearch.password: "kibanaserver"
-opensearch.requestHeadersWhitelist: [ authorization,securitytenant ]
+opensearch.requestHeadersAllowlist: [ authorization,securitytenant ]
 
 opensearch_security.multitenancy.enabled: false
 opensearch_security.readonly_mode.roles:
@@ -24,8 +24,18 @@ opensearchDashboards.branding:
     defaultUrl: "https://raw.githubusercontent.com/bitergia-analytics/bitergia-analytics-opensearch-dashboards/main/assets/bitergia_logo.svg"
   faviconUrl: "https://raw.githubusercontent.com/bitergia-analytics/bitergia-analytics-opensearch-dashboards/main/assets/bitergia_logo.svg"
 
-opensearch_security.basicauth.login.brandimage: "https://raw.githubusercontent.com/bitergia-analytics/bitergia-analytics-opensearch-dashboards/main/assets/bitergia_login_logo.png"
-opensearch_security.basicauth.login.title: "Please login to Bitergia Analytics Dashboard."
-opensearch_security.basicauth.login.subtitle: "If you have forgotten your username or password, please contact the Bitergia staff."
+opensearch_security.ui.basicauth.login.brandimage: "https://raw.githubusercontent.com/bitergia-analytics/bitergia-analytics-opensearch-dashboards/main/assets/bitergia_login_logo.png"
+opensearch_security.ui.basicauth.login.title: "Please login to Bitergia Analytics Dashboard."
+opensearch_security.ui.basicauth.login.subtitle: "If you have forgotten your username or password, please contact the Bitergia staff."
 
 opensearch_security.auth.anonymous_auth_enabled: true
+
+bitergia_analytics.branding:
+  projectName: "Bitergia Analytics"
+  backgroundColor: "#333"
+  linkColor: "#fcb42e"
+  textColor: "#cecece"
+  menuItemColor: "#dedede"
+  menuItemHoverColor: "#000000"
+  dropdownColor: "#525252"
+  selectedItemColor: "#f49e42"
