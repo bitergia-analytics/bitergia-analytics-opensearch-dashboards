@@ -24,16 +24,16 @@ ENV PATH=/usr/share/opensearch-dashboards/bin:$PATH
 #
 
 # Install visualization plugins
-RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/radar-vis-plugin/releases/download/0.33.0-rc.5/radar-vis-plugin-0.33.0_3.2.0.zip
-RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/network-vis-plugin/releases/download/0.33.0-rc.5/network-vis-plugin-0.33.0_3.2.0.zip
-RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/dotplot-vis-plugin/releases/download/0.33.0-rc.5/dotplot-vis-plugin-0.33.0_3.2.0.zip
-RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/polar-vis-plugin/releases/download/0.33.0-rc.5/polar-vis-plugin-0.33.0_3.2.0.zip
+RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/radar-vis-plugin/releases/download/0.33.0-rc.6/radar-vis-plugin-0.33.0_3.2.0.zip
+RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/network-vis-plugin/releases/download/0.33.0-rc.6/network-vis-plugin-0.33.0_3.2.0.zip
+RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/dotplot-vis-plugin/releases/download/0.33.0-rc.6/dotplot-vis-plugin-0.33.0_3.2.0.zip
+RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/polar-vis-plugin/releases/download/0.33.0-rc.6/polar-vis-plugin-0.33.0_3.2.0.zip
 
 # Install enhanced table plugin
 RUN opensearch-dashboards-plugin install "https://github.com/fbaligand/kibana-enhanced-table/releases/download/v1.14.0/enhanced-table-1.14.0_osd-3.2.0.zip"
 
 # Install Bitergia Analytics plugins
-RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/bitergia-analytics-plugin/releases/download/0.33.0-rc.5/bitergia-analytics-plugin-0.33.0_3.2.0.zip
+RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/bitergia-analytics-plugin/releases/download/0.33.0-rc.6/bitergia-analytics-plugin-0.33.0_3.2.0.zip
 
 # Remove plugins not supported on this release
 RUN opensearch-dashboards-plugin remove reportsDashboards
