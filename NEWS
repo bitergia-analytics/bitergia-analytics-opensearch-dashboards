@@ -1,5 +1,18 @@
 # Releases
 
+## bitergia-analytics-opensearch-dashboards 0.33.0 - (2025-09-24)
+
+**New features:**
+
+ * OpenSearch Dashboards 3 upgrade\
+   Update base image for Bitergia Analytics OpenSearch Dashboards to
+   version 3. OpenSearch Dashboards 3 brings enhanced usability and
+   visualization features. The Discover tool has been redesigned for
+   easier data exploration, with a unified language selector and improved
+   search interface. Dashboards now offer more flexible visualization
+   options, faster rendering, and smoother interactions.
+
+
   ## bitergia-analytics-opensearch-dashboards 0.32.1 - (2025-08-21)
   
   * No changes on this component. The version is bumped to align it
