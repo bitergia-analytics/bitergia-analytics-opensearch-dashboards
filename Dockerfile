@@ -24,16 +24,16 @@ ENV PATH=/usr/share/opensearch-dashboards/bin:$PATH
 #
 
 # Install visualization plugins
-RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/radar-vis-plugin/releases/download/0.34.1-rc.1/radar-vis-plugin-0.34.1_3.2.0.zip
-RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/network-vis-plugin/releases/download/0.34.1-rc.1/network-vis-plugin-0.34.1_3.2.0.zip
-RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/dotplot-vis-plugin/releases/download/0.34.1-rc.1/dotplot-vis-plugin-0.34.1_3.2.0.zip
-RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/polar-vis-plugin/releases/download/0.34.1-rc.1/polar-vis-plugin-0.34.1_3.2.0.zip
+RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/radar-vis-plugin/releases/download/0.34.1/radar-vis-plugin-0.34.1_3.2.0.zip
+RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/network-vis-plugin/releases/download/0.34.1/network-vis-plugin-0.34.1_3.2.0.zip
+RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/dotplot-vis-plugin/releases/download/0.34.1/dotplot-vis-plugin-0.34.1_3.2.0.zip
+RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/polar-vis-plugin/releases/download/0.34.1/polar-vis-plugin-0.34.1_3.2.0.zip
 
 # Install enhanced table plugin
 RUN opensearch-dashboards-plugin install "https://github.com/fbaligand/kibana-enhanced-table/releases/download/v1.14.0/enhanced-table-1.14.0_osd-3.2.0.zip"
 
 # Install Bitergia Analytics plugins
-RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/bitergia-analytics-plugin/releases/download/0.34.1-rc.1/bitergia-analytics-plugin-0.34.1_3.2.0.zip
+RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/bitergia-analytics-plugin/releases/download/0.34.1/bitergia-analytics-plugin-0.34.1_3.2.0.zip
 
 # Remove plugins not supported on this release
 RUN opensearch-dashboards-plugin remove reportsDashboards
