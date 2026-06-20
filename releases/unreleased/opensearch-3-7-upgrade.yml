@@ -1,0 +1,9 @@
+---
+title: OpenSearch Dashboards 3.7 upgrade
+category: added
+author: Jose Javier Merchante <jjmerchante@bitergia.com>
+issue: null
+notes: >
+  Update base image for Bitergia Analytics OpenSearch Dashboards
+  to version 3.7.0. This release includes enhanced features for
+  data exploration and visualization.
