@@ -1,7 +1,7 @@
 # Copyright (C) Bitergia
 # GPLv3 License
 
-FROM opensearchproject/opensearch-dashboards:3.7.0
+FROM opensearchproject/opensearch-dashboards:3.10.0
 
 LABEL maintainer="Santiago Dueñas <sduenas@bitergia.com>"
 LABEL org.opencontainers.image.title="Bitergia Analytics OpenSearch Dashboards"
