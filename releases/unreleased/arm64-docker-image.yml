@@ -1,0 +1,8 @@
+---
+title: ARM64 Docker image
+category: added
+author: Jose Javier Merchante <jose.javier.merchante@eclipse-foundation.org>
+issue: null
+notes: >
+  The Bitergia Analytics OpenSearch Dashboards Docker image is now built for
+  both linux/amd64 and linux/arm64 architectures.
