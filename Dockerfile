@@ -30,7 +30,7 @@ RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/d
 RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/polar-vis-plugin/releases/download/0.40.0/polar-vis-plugin-0.40.0_3.7.0.zip
 
 # Install enhanced table plugin
-RUN opensearch-dashboards-plugin install "https://github.com/fbaligand/kibana-enhanced-table/releases/download/v1.14.0/enhanced-table-1.15.0_osd-3.7.0.zip"
+RUN opensearch-dashboards-plugin install "https://github.com/fbaligand/kibana-enhanced-table/releases/download/v1.15.0/enhanced-table-1.15.0_osd-3.10.0.zip"
 
 # Install Bitergia Analytics plugins
 RUN opensearch-dashboards-plugin install https://github.com/bitergia-analytics/bitergia-analytics-plugin/releases/download/0.40.0/bitergia-analytics-plugin-0.40.0_3.7.0.zip
